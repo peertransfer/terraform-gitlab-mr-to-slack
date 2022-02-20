@@ -1,15 +1,15 @@
 module "lambda_function" {
-  source = "terraform-aws-modules/lambda/aws"
+  source  = "terraform-aws-modules/lambda/aws"
   version = "v2.34.0"
 
-  publish = true
+  publish       = true
   function_name = var.name
   description   = var.lambda_description
   handler       = "app.lambda_handler"
   runtime       = "ruby2.7"
 
   environment_variables = {
-    SLACK_WEBHOOK_URL = var.slack_webhook_url
+    SLACK_WEBHOOK_URL           = var.slack_webhook_url
     GITLAB_MR_EVENTS_SUBSCRIBED = var.gitlab_subscribe_events
   }
 
@@ -22,14 +22,18 @@ module "lambda_function" {
   create_current_version_allowed_triggers = false
 
   source_path = "./functions"
+
+  depends_on = [
+    local_file.config,
+  ]
 }
 
 module "api_gateway" {
-  source = "terraform-aws-modules/apigateway-v2/aws"
+  source  = "terraform-aws-modules/apigateway-v2/aws"
   version = "v1.5.1"
 
-  create_api_domain_name           = false
-  
+  create_api_domain_name = false
+
   name          = var.name
   description   = var.api_gateway_description
   protocol_type = "HTTP"
@@ -45,4 +49,9 @@ module "api_gateway" {
       lambda_arn = module.lambda_function.lambda_function_arn
     }
   }
+}
+
+resource "local_file" "config" {
+  content  = templatefile("${path.module}/templates/config.yml.tpl", { labels_to_notify = var.labels_to_notify })
+  filename = "${path.module}/functions/config.yml"
 }

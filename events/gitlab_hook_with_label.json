@@ -1,0 +1,185 @@
+{
+  "object_kind": "merge_request",
+  "event_type": "merge_request",
+  "user": {
+    "id": 14,
+    "name": "Alejandro Colomina",
+    "username": "alejandro.colomina",
+    "avatar_url": "https://secure.gravatar.com/avatar/c6a326e4e109380786927dc60c7549f8?s=80\u0026d=identicon",
+    "email": "alejandro.colomina@flywire.com"
+  },
+  "project": {
+    "id": 339,
+    "name": "test-notifications",
+    "description": "",
+    "web_url": "https://gitlab.flywire.io/alejandro.colomina/test-notifications",
+    "avatar_url": null,
+    "git_ssh_url": "git@git.gitlab.flywire.io:alejandro.colomina/test-notifications.git",
+    "git_http_url": "https://gitlab.flywire.io/alejandro.colomina/test-notifications.git",
+    "namespace": "Alejandro Colomina",
+    "visibility_level": 10,
+    "path_with_namespace": "alejandro.colomina/test-notifications",
+    "default_branch": "master",
+    "ci_config_path": null,
+    "homepage": "https://gitlab.flywire.io/alejandro.colomina/test-notifications",
+    "url": "git@git.gitlab.flywire.io:alejandro.colomina/test-notifications.git",
+    "ssh_url": "git@git.gitlab.flywire.io:alejandro.colomina/test-notifications.git",
+    "http_url": "https://gitlab.flywire.io/alejandro.colomina/test-notifications.git"
+  },
+  "object_attributes": {
+    "assignee_id": null,
+    "author_id": 14,
+    "created_at": "2021-03-04 15:32:55 UTC",
+    "description": "",
+    "head_pipeline_id": null,
+    "id": 126,
+    "iid": 9,
+    "last_edited_at": null,
+    "last_edited_by_id": null,
+    "merge_commit_sha": null,
+    "merge_error": null,
+    "merge_params": {
+      "force_remove_source_branch": "1"
+    },
+    "merge_status": "can_be_merged",
+    "merge_user_id": null,
+    "merge_when_pipeline_succeeds": false,
+    "milestone_id": null,
+    "source_branch": "test",
+    "source_project_id": 339,
+    "state_id": 1,
+    "target_branch": "master",
+    "target_project_id": 339,
+    "time_estimate": 0,
+    "title": "Update README.md",
+    "updated_at": "2021-03-04 15:33:11 UTC",
+    "updated_by_id": 14,
+    "url": "https://gitlab.flywire.io/alejandro.colomina/test-notifications/-/merge_requests/9",
+    "source": {
+      "id": 339,
+      "name": "test-notifications",
+      "description": "",
+      "web_url": "https://gitlab.flywire.io/alejandro.colomina/test-notifications",
+      "avatar_url": null,
+      "git_ssh_url": "git@git.gitlab.flywire.io:alejandro.colomina/test-notifications.git",
+      "git_http_url": "https://gitlab.flywire.io/alejandro.colomina/test-notifications.git",
+      "namespace": "Alejandro Colomina",
+      "visibility_level": 10,
+      "path_with_namespace": "alejandro.colomina/test-notifications",
+      "default_branch": "master",
+      "ci_config_path": null,
+      "homepage": "https://gitlab.flywire.io/alejandro.colomina/test-notifications",
+      "url": "git@git.gitlab.flywire.io:alejandro.colomina/test-notifications.git",
+      "ssh_url": "git@git.gitlab.flywire.io:alejandro.colomina/test-notifications.git",
+      "http_url": "https://gitlab.flywire.io/alejandro.colomina/test-notifications.git"
+    },
+    "target": {
+      "id": 339,
+      "name": "test-notifications",
+      "description": "",
+      "web_url": "https://gitlab.flywire.io/alejandro.colomina/test-notifications",
+      "avatar_url": null,
+      "git_ssh_url": "git@git.gitlab.flywire.io:alejandro.colomina/test-notifications.git",
+      "git_http_url": "https://gitlab.flywire.io/alejandro.colomina/test-notifications.git",
+      "namespace": "Alejandro Colomina",
+      "visibility_level": 10,
+      "path_with_namespace": "alejandro.colomina/test-notifications",
+      "default_branch": "master",
+      "ci_config_path": null,
+      "homepage": "https://gitlab.flywire.io/alejandro.colomina/test-notifications",
+      "url": "git@git.gitlab.flywire.io:alejandro.colomina/test-notifications.git",
+      "ssh_url": "git@git.gitlab.flywire.io:alejandro.colomina/test-notifications.git",
+      "http_url": "https://gitlab.flywire.io/alejandro.colomina/test-notifications.git"
+    },
+    "last_commit": {
+      "id": "c7261ab316de717f219b492655be82699b7b8ab2",
+      "message": "Update README.md",
+      "title": "Update README.md",
+      "timestamp": "2021-02-25T09:56:19+00:00",
+      "url": "https://gitlab.flywire.io/alejandro.colomina/test-notifications/-/commit/c7261ab316de717f219b492655be82699b7b8ab2",
+      "author": {
+        "name": "Alejandro Colomina",
+        "email": "alejandro.colomina@flywire.com"
+      }
+    },
+    "work_in_progress": false,
+    "total_time_spent": 0,
+    "human_total_time_spent": null,
+    "human_time_estimate": null,
+    "assignee_ids": [],
+    "state": "opened",
+    "action": "update"
+  },
+  "labels": [
+    {
+      "id": 1,
+      "title": "SRE",
+      "color": "#6699cc",
+      "project_id": 339,
+      "created_at": "2021-02-25 09:36:54 UTC",
+      "updated_at": "2021-02-25 10:07:14 UTC",
+      "template": false,
+      "description": null,
+      "type": "ProjectLabel",
+      "group_id": null
+    },
+    {
+      "id": 1,
+      "title": "TOOLS",
+      "color": "#6699cc",
+      "project_id": 339,
+      "created_at": "2021-02-25 09:36:54 UTC",
+      "updated_at": "2021-02-25 10:07:14 UTC",
+      "template": false,
+      "description": null,
+      "type": "ProjectLabel",
+      "group_id": null
+    }
+
+  ],
+  "changes": {
+    "updated_at": {
+      "previous": "2021-03-04 15:32:55 UTC",
+      "current": "2021-03-04 15:33:11 UTC"
+    },
+    "updated_by_id": {
+      "previous": null,
+      "current": 14
+    },
+    "labels": {
+      "previous": [],
+      "current": [
+        {
+          "id": 1,
+          "title": "SRE::review",
+          "color": "#6699cc",
+          "project_id": 339,
+          "created_at": "2021-02-25 09:36:54 UTC",
+          "updated_at": "2021-02-25 10:07:14 UTC",
+          "template": false,
+          "description": null,
+          "type": "ProjectLabel",
+          "group_id": null
+        },
+        {
+          "id": 1,
+          "title": "TOOLS::review",
+          "color": "#6699cc",
+          "project_id": 339,
+          "created_at": "2021-02-25 09:36:54 UTC",
+          "updated_at": "2021-02-25 10:07:14 UTC",
+          "template": false,
+          "description": null,
+          "type": "ProjectLabel",
+          "group_id": null
+        }
+      ]
+    }
+  },
+  "repository": {
+    "name": "test-notifications",
+    "url": "git@git.gitlab.flywire.io:alejandro.colomina/test-notifications.git",
+    "description": "",
+    "homepage": "https://gitlab.flywire.io/alejandro.colomina/test-notifications"
+  }
+}

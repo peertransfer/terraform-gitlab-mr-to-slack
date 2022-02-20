@@ -1,4 +1,5 @@
 require_relative 'helpers'
+require 'yaml'
 
 class Environment
   class << self
@@ -26,7 +27,8 @@ class Environment
       
       @configuration = {
         :slack_hook => ENV.fetch('SLACK_WEBHOOK_URL'),
-        :merge_request_events_subscribed => ENV.fetch('GITLAB_MR_EVENTS_SUBSCRIBED').split(',')
+        :merge_request_events_subscribed => ENV.fetch('GITLAB_MR_EVENTS_SUBSCRIBED').split(','),
+        :channels => YAML.safe_load(File.read('./config.yml')).fetch('labels')
       }
     end
   end

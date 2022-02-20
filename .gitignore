@@ -2,3 +2,4 @@ builds
 .terraform
 .aws-sam
 *tfstate*
+functions/config.yml
