@@ -1,0 +1,4 @@
+builds
+.terraform
+.aws-sam
+*tfstate*
