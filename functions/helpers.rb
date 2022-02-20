@@ -21,6 +21,7 @@ class Helpers
         labels_to_notify.each do |label|
           request.body = {
             channel: Environment.configuration[:channels][label],
+            username: Environment.configuration[:slack_username],
             blocks: prepare_blocks(gitlab_event)
           }.to_json
     

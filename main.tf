@@ -10,6 +10,7 @@ module "lambda_function" {
 
   environment_variables = {
     SLACK_WEBHOOK_URL           = var.slack_webhook_url
+    SLACK_USERNAME              = var.slack_username
     GITLAB_MR_EVENTS_SUBSCRIBED = var.gitlab_subscribe_events
   }
 

@@ -22,6 +22,7 @@ Resources:
       Environment:
         Variables:
           SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
+          SLACK_USERNAME: "gitlab-to-slack local"
           GITLAB_MR_EVENTS_SUBSCRIBED: "open,update"
       Events:
         GitlabToSlack:

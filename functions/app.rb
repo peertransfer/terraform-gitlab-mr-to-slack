@@ -7,7 +7,7 @@ require_relative 'merge_request_event'
 def lambda_handler(event:, context:)
   return unless Environment.set?
 
-  body = JSON.parse(Base64.decode64(event['body']))
+  body = JSON.parse(event['body'])
 
   gitlab_event = MergeRequestEvent.new(body)
   return if gitlab_event.has_no_labels

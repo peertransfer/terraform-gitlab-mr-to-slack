@@ -9,6 +9,12 @@ variable "slack_webhook_url" {
   description = "Integration URL of Slack Webhook. Eg. https://hooks.slack.com/services/XX/YYYYY/ZZZZZZ"
 }
 
+variable "slack_username" {
+  type        = string
+  default     = "Gitlab MR webhook"
+  description = "Slack username to send notifications as"
+}
+
 variable "labels_to_notify" {
   type        = map(string)
   description = "A map of labels and corresponding slack channels to notify"

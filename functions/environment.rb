@@ -27,6 +27,7 @@ class Environment
       
       @configuration = {
         :slack_hook => ENV.fetch('SLACK_WEBHOOK_URL'),
+        :slack_username => ENV.fetch('SLACK_USERNAME', 'gitlab-to-slack default user'),
         :merge_request_events_subscribed => ENV.fetch('GITLAB_MR_EVENTS_SUBSCRIBED').split(','),
         :channels => YAML.safe_load(File.read('./config.yml')).fetch('labels')
       }
