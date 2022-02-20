@@ -21,7 +21,7 @@ module "lambda_function" {
   }
   create_current_version_allowed_triggers = false
 
-  source_path = "./functions"
+  source_path = "${path.module}/functions"
 
   depends_on = [
     local_file.config,
