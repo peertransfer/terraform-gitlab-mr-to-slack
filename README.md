@@ -2,7 +2,7 @@
 
 This module creates an API Gateway and an AWS Lambda function that send notifications to Slack for each merge request event you want to be subscribed to.
 
-GitLab will send a webhook notification to your lambda when you open/update a merge request. The lambda will then send a message to Slack channels depending on the labels applied to the merge request and the configuration specified when invoking the Terraform module.
+GitLab will send a [webhook](https://docs.gitlab.com/ee/user/project/integrations/webhooks.html) notification to your lambda when you open/update a merge request. The lambda will then send a message to Slack channels depending on the labels applied to the merge request and the configuration specified when invoking the Terraform module.
 
 ### Requirements
 
