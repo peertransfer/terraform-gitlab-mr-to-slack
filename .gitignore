@@ -3,3 +3,4 @@ builds
 .aws-sam
 *tfstate*
 functions/config.yml
+.terraform.lock.hcl
